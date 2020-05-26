@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Site de reservation de places de cinéma </title>
+    <script src="https://kit.fontawesome.com/6878d85fad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class='header'>
+
+        <a href="#" class="header__icon" id="header__icon"></a> </a>
+
+        <div class='logo'>
+            <span class='elogo'><i class="fas fa-video"></i></span>
+            <span class=''>Basset</span>
+        </div>
+
+
+        <a href="index.html" class="isSelected">Reservation</a>
+        <a href="#">Galerie</a>
+        <a href="#">Infos pratiques</a>
+        <a href="#">Contact</a>
+
+
+
+
+    </header>
+
+    <h1 class="titlePlace">Reservez vos places dès maintenant</h1>
+
+
+    <div class="containerMovieTickets">
+
+        <div class="movie-container">
+            <label>Choisir un film :</label>
+            <select id="movie">
+                <option value="12">Le Joker (12€)</option>
+                <option value="10">Avengers: Endgame (10€)</option>
+                <option value="8">Toy Story 4 (8€)</option>
+                <option value="9"> Le Roi Lion (9€)</option>
+                <option value="15"> Titanic (15€)</option>
+                <option value="10">Dogville (10€)</option>
+                <option value="11">Scary Movie (11€)</option>
+            </select>
+        </div>
+
+
+        <ul class="showcase">
+            <li>
+                <div class="seat"></div>
+                <small>N/A</small>
+            </li>
+            <li>
+                <div class="seat selected"></div>
+                <small>Seléctionné</small>
+            </li>
+            <li>
+                <div class="seat occupied"></div>
+                <small>Occupé</small>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="screen"></div>
+
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <p class="text">
+            Vous avez selectionné <span id="count">0</span> sièges pour un total de <span id="total">0</span> €
+        </p>
+        <button class="button7"><i class="fas fa-shopping-cart"></i></button>
+    </div>
+    <div class="popup-container" id="popup-container">
+
+        <form class="form" id="form">
+            <h2>Votre Panier</h2>
+            Montant <span class="tots"></span> €
+            <div class="form-control">
+                <label for="username">Nb Carte de Crédit</label>
+                <input type="text" id="username" name="nom d'utilisateur" placeholder="Entrez votre carte de crédit" />
+            </div>
+            <button id="play-button" class="button7 ">Payer</button>
+            <button id="cancel" class="button7 ">Annuler</button>
+        </form>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
